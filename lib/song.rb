@@ -27,7 +27,12 @@ class Song
   end
 
   def self.genre_count
-    puts {@@genre => @@count} 
+    new_hash = {}
+    @@genres.each do |type|
+      if new_hash[type] == nil
+        new_hash[type] = 1
+      else
+      end 
   end
 
 end
