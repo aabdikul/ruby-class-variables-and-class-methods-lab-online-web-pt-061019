@@ -30,12 +30,24 @@ class Song
     new_hash = {}
     @@genres.each do |type|
       if new_hash[type] == nil
-        new_hash[type] = 1
+        new_hash[type] = 1 #this says that if rap doesn't exist in the hash as a key, then set rap => 1
       else
-        new_hash[type] += 1
+        new_hash[type] += 1 #this says that the type (rap), if present again, should have value increase by 1
       end
     end
     return new_hash
+  end
+
+  def self.artist_count
+    dictionary = {}
+    @@artists.each do |musician|
+      if dictionary[musician] == nil
+        dictionary[musician] = 1 #this says that if rap doesn't exist in the hash as a key, then set rap => 1
+      else
+        dictionary[musician] += 1 #this says that the type (rap), if present again, should have value increase by 1
+      end
+    end
+    return dictionary
   end
 
 end
