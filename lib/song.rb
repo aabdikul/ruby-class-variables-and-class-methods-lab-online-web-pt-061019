@@ -27,7 +27,7 @@ class Song
   end
 
   def self.genre_count
-    {@@genre => @@count} 
+    puts {@@genre => @@count} 
   end
 
 end
