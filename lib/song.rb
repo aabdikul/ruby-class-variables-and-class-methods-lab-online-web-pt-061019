@@ -13,6 +13,10 @@ class Song
     @@count
   end
 
+  def artists=(artist)
+    @@artists = artist
+  end
+
   def artists
     @@artists
   end
