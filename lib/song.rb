@@ -32,7 +32,9 @@ class Song
       if new_hash[type] == nil
         new_hash[type] = 1
       else
-      end 
+        new_hash[type] += 1
+      end
+    end
   end
 
 end
