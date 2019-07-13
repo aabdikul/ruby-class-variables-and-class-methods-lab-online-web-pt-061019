@@ -35,6 +35,7 @@ class Song
         new_hash[type] += 1
       end
     end
+    return new_hash
   end
 
 end
